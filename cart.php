@@ -13,20 +13,5 @@
     <input type='text' name='name' id='0123'>
     <input type='submit' value='Submit'>
     </form>
-    <?php
+  <?php
 $product = $_POST["name"];
-if ($product == 1) {
-echo "Gekozen item is zeewater";
-}
-elseif ($product == 2) {
-echo "Gekozen item is zwembadwater";
-}
-elseif ($product ==3) {
-echo "Gekozen item is Natriumchloride";
-}
-else {
-  echo "Geen valide product gevonden";
-}
-     ?>
-  </body>
-</html>
