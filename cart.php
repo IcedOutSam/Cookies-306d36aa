@@ -18,7 +18,7 @@ session_start();
     </form>
     <?php
 
-      if (isset($_POST["Laurens"])) {
+    if (isset($_POST["Laurens"])) {
         $_COOKIE["name"] = $_POST["name"];
         echo "U heeft het product " . $_COOKIE["name"] . " gekozen";
     }
