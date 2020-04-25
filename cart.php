@@ -18,22 +18,9 @@ session_start();
     </form>
     <?php
 
-
-$Zeewater = "Zeewater";
-setcookie("1", $Zeewater);
-
-$Zwembad = "Zwembadwater";
-setcookie("2", $Zwembad);
-
-$Na = "Natriumchloride";
-setcookie("3", $Na);
-
 if (isset($_POST["Laurens"])) {
-    if ($_COOKIE[$_POST["name"]]) {
-        echo "Gekozen item is " . $_COOKIE[$_POST["name"]];
-    } else {
-        echo "Geen valide product gevonden";
-    }
+ $_COOKIE["name"] = $_POST["name"];
+ echo "U heeft het product " . $_COOKIE["name"] . " gekozen";
 }
 
 ?>
